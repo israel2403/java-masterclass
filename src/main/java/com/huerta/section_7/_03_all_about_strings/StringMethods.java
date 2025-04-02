@@ -10,7 +10,14 @@ public class StringMethods {
 
     System.out.printf("Month in %s is %s%n", birthday, birthday.substring(3, 5));
 
-    final String newDate = String.join("/", "25", "11", "1982");
+    String newDate = String.join("/", "25", "11", "1982");
+    System.out.printf("New date is %s%n", newDate);
+
+    newDate = "25";
+    newDate = newDate.concat("/");
+    newDate = newDate.concat("11");
+    newDate = newDate.concat("/");
+    newDate = newDate.concat("1982");
     System.out.printf("New date is %s%n", newDate);
   }
 }
