@@ -19,5 +19,8 @@ public class StringMethods {
     newDate = newDate.concat("/");
     newDate = newDate.concat("1982");
     System.out.printf("New date is %s%n", newDate);
+
+    newDate = "25" + "/" + "11" + "/" + "1982";
+    System.out.printf("New date is %s%n", newDate);
   }
 }
