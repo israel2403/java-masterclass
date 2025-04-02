@@ -14,6 +14,14 @@ public class Main {
 
     System.out.printf("index of 'World' in %s is %d%n", helloWorld, helloWorld.indexOf("l", 3));
     System.out.printf("index of 'l' in %s is %d%n", helloWorld, helloWorld.lastIndexOf("l", 8));
+
+    final String helloworldLowerCase = helloWorld.toLowerCase();
+    if (helloWorld.equals(helloworldLowerCase)) {
+      System.out.printf("%s is equal to %s%n", helloWorld, helloworldLowerCase);
+    }
+    if (helloWorld.equalsIgnoreCase(helloworldLowerCase)) {
+      System.out.printf("%s values match ignoring case %s%n", helloWorld, helloworldLowerCase);
+    }
   }
 
   public static void printInformation(final String string) {
