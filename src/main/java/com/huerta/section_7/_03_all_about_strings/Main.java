@@ -32,6 +32,10 @@ public class Main {
     if (helloWorld.contains("World")) {
       System.out.printf("%s contains %s%n", helloWorld, "World");
     }
+
+    if (helloWorld.contentEquals("Hello World")) {
+      System.out.printf("%s content equals %s%n", helloWorld, "Hello World");
+    }
   }
 
   public static void printInformation(final String string) {
