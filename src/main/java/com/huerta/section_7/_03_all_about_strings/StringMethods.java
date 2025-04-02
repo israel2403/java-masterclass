@@ -22,5 +22,11 @@ public class StringMethods {
 
     newDate = "25" + "/" + "11" + "/" + "1982";
     System.out.printf("New date is %s%n", newDate);
+
+    newDate = "25".concat("/").concat("11").concat("/").concat("1982");
+    System.out.printf("New date is %s%n", newDate);
+
+    // replace caratacter with replace method
+    System.out.printf("New date is %s%n", newDate.replace("/", "-"));
   }
 }
