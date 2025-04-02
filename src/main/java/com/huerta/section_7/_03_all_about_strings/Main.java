@@ -22,6 +22,16 @@ public class Main {
     if (helloWorld.equalsIgnoreCase(helloworldLowerCase)) {
       System.out.printf("%s values match ignoring case %s%n", helloWorld, helloworldLowerCase);
     }
+
+    if (helloWorld.startsWith("Hello")) {
+      System.out.printf("%s starts with %s%n", helloWorld, "Hello");
+    }
+    if (helloWorld.endsWith("World")) {
+      System.out.printf("%s ends with %s%n", helloWorld, "World");
+    }
+    if (helloWorld.contains("World")) {
+      System.out.printf("%s contains %s%n", helloWorld, "World");
+    }
   }
 
   public static void printInformation(final String string) {
