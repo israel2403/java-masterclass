@@ -12,7 +12,10 @@ public class Main {
     printInformation(helloWorldStringBuilder);
 
     final StringBuilder emptyStart = new StringBuilder();
+    emptyStart.append("a".repeat(57));
+
     final StringBuilder emptyStart32 = new StringBuilder(32);
+    emptyStart32.append("a".repeat(17));
 
     printInformation(emptyStart);
     printInformation(emptyStart32);
