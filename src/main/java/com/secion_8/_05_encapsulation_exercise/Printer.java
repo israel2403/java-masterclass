@@ -20,9 +20,9 @@ public class Printer {
   }
 
   public int printPages(int pages) {
-    int jobPages = (this.duplex) ? (pages / 2 + pages % 2) : pages;
-    this.pagesPrinted += jobPages;
-    return jobPages;
+    int pagesToPrint = (this.duplex) ? (pages / 2 + pages % 2) : pages;
+    this.pagesPrinted += pagesToPrint;
+    return pagesToPrint;
   }
 
   public int getPagesPrinted() {
