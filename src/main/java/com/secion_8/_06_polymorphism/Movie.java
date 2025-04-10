@@ -10,6 +10,12 @@ public class Movie {
     String instanceType = this.getClass().getSimpleName();
     System.out.println(title + " is a " + instanceType + " film.");
   }
+
+  public static Movie getMovie(final String type, final String title) {
+    return switch (type.toUpperCase().charAt(0)) {
+      default -> new Movie(title);
+    };
+  }
 }
 
 class AdventureMovie extends Movie {
