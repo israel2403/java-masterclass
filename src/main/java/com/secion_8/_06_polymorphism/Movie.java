@@ -23,3 +23,15 @@ class AdventureMovie extends Movie {
     System.out.printf(".. %s%n".repeat(3), "Pleasant Scene", "Scary Music", "Something Bad Happens");
   }
 }
+
+class ComedyMovie extends Movie {
+  public ComedyMovie(String title) {
+    super(title);
+  }
+
+  @Override
+  public void watchMovie() {
+    super.watchMovie();
+    System.out.printf(".. %s%n".repeat(3), "Some Funny Happens", "Happy Ending");
+  }
+}
