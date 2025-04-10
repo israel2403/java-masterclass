@@ -13,6 +13,9 @@ public class Movie {
 
   public static Movie getMovie(final String type, final String title) {
     return switch (type.toUpperCase().charAt(0)) {
+      case 'A' -> new AdventureMovie(title);
+      case 'C' -> new ComedyMovie(title);
+      case 'S' -> new ScienceFiction(title);
       default -> new Movie(title);
     };
   }
